@@ -1,0 +1,188 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    /* Padding to avoid content sticking to the edges on small screens */
+}
+
+/* Form container */
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    /* Full width on smaller screens */
+    text-align: center;
+    margin-top: 30px;
+    /* Space between container and other elements */
+}
+
+/* Header */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    /* Reduced margin for better spacing */
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields */
+input {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    /* Reduced space between inputs */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    outline: none;
+    border-color: #407bff;
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/* Submit button */
+button {
+    background-color: #407bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3566d4;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Error messages */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    /* Space above the error message */
+    margin-bottom: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    input {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+/* Styles for the dialog overlay */
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Styles for the dialog box */
+.dialog-content {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+}
+
+.dialog-image {
+    width: 350px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #407bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3566d4;
+}
+
+button:active {
+    transform: translateY(2px);
+}
